@@ -74,3 +74,7 @@ is_true = not False
 # /GAMES
 print(arr_for)
 
+
+
+# lololololo
+
