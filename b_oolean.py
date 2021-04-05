@@ -1,3 +1,6 @@
+bool_array0 = bool()
+bool_array6 = bool(10>5)
+bool_array7 = bool(10<5)
 bool_array1 = bool([])
 bool_array2 = bool(5)
 bool_array3 = bool(0)
