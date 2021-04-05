@@ -9,10 +9,10 @@ days.append('вс')
 print(days)
 
 month = [i for i in range(31)]  # создание  массива-месяц
-month.pop(0)  # удаление дня 0
-'''rda = [0,1,2,3,4,5,6,7,8,27,54,8]
+month.pop(0)  # удаление дня 0(по индексу)
+'''rda = [10,13,22,45,48,55,26,17,78,27,54,8]
 rda.pop(2)
-rda = [0,1,3,4,5,6,7,8]'''
+rda = [10,13,45,48,55,26,17,78,27,54,8]'''
 
 del month[20:30]  # удаление от 20 до 30 элементов
 del month[10]
@@ -47,7 +47,14 @@ len, min,max,sum, sorted (но при его использовании возв
 # mup method:
 a = [-1, 2, -5, 10, -12]  # создаем список
 b = list(map(abs, a))  # применяем map с функцией abs (значение по модулю) к списку а
+
+
 # TODO: написать пример с функцией
+def for_mup(x):
+    return x ** 3
+
+
+rez = list(map(for_mup, a))
 print(b)
 c = map(lambda x: x ** 2, a)  # функция внутри скобок создается с помощью lambda
 print(c)
@@ -70,4 +77,18 @@ print(piz)
 items = [1, 24, 17, 14, 9, 32, 2]
 all_max = reduce(lambda a, b: a if (a > b) else b, items)
 print(all_max)
+
+
 # TODO написать пример с reduce
+
+
+def maximum(a, b):
+    if a > b:
+        return a
+    else:
+        return b
+
+
+items = [1, 24, 17, 14, 9, 32, 2, 112]
+all_maximum = reduce(maximum, items)
+print()
