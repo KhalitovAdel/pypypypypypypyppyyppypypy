@@ -3,6 +3,7 @@
 # 2) map
 # 3) filter
 # 4) reduce
+# 5) find
 
 # Методы
 # 1) append - добавляет в конец массива
@@ -11,7 +12,7 @@
 # 4) clear -  TODO: пройти потом
 # 5) copy - TODO: пройти потом
 # 6) count
-# 7) index
+# 7) index l
 # 8) pop - удаляет элемент с определенного индекса, уменьшается ли длина массива
 # 9) remove - удаляет элемент по его значению из массива
 # 10) reverse - переворачивает массив
@@ -48,7 +49,32 @@ def map_handler(el):
 
 result_map = list(map(map_handler, arr_map))
 
-lol = type(None)
+# GAMES
+lol = (4, 3, 1, 2, 3)
 
+lal = sorted(lol)
+
+variable_kk = 555
+
+lol_tuple = (None, variable_kk, 1, '', {}, map_handler)
+
+lol_list = [None, variable_kk, 1, '', {}, map_handler]
+
+variable_kk = variable_kk - 1
+
+is_equality1 = lol_tuple == lol_list
+
+is_equality2 = lol_list == lol_list
+
+is_equality3 = lol_tuple == lol_tuple
+
+is_equality4 = lol_list == [None, variable_kk, 1, '', {}, map_handler]
+
+is_true = not False
+# /GAMES
 print(arr_for)
+
+
+
+# lololololo
 
