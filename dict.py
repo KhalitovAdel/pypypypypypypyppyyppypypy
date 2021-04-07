@@ -14,5 +14,7 @@ di.values()  # возвращает значения в словаре
 
 print(di.setdefault(6))
 
-
+var = {}
+result_123 = var.get('first_key', {}).get('second_key', {}).get('last_key')
+print(result_123)
 print(di)
