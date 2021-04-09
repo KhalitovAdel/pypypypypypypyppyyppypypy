@@ -1,10 +1,10 @@
 from c_lasses import NPC
 #  TODO:
-# Уточнить с конструктором как вызвать супер функцию
 # Приветси пример множественного наследования
 
 class NPC2(NPC):
-    def heal(self, value):
+    def heal(self, value, other_value):
+        super(value)
         self.healthPoint = self.healthPoint + value
 
     def hit_damage(self, value):
